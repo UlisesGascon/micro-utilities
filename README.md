@@ -8,6 +8,11 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
+#### Published
+
+- [normalize-boolean](/packages/normalize-boolean/README.md) - _Simple and very opinionated wrapper to manage Boolean conversions_
+
+#### Internal
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 

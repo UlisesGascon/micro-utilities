@@ -16,7 +16,7 @@
 
 # About
 
-Simple and very opinionated wrapper to manage Boolean Conversion
+Simple and very opinionated wrapper to manage Boolean conversions
 
 ## ❤️ Awesome Features:
 
