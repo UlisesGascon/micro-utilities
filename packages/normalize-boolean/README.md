@@ -37,8 +37,16 @@ npm install normalize-boolean
 
 ### Simple example
 
+**Importation**
+
 ```js
-const normalizeBoolean = require('normalize-boolean')
+const { normalizeBoolean } = require('normalize-boolean')
+import { normalizeBoolean } from 'normalize-boolean'
+```
+
+**usage**
+
+```js
 
 // True and false alias
 console.log(normalizeBoolean('true'))  // true
