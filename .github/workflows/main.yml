@@ -43,7 +43,7 @@ jobs:
           run: npm run build
  
         - name: Test
-          run: npm run test
+          run: npm run test:coverage
 
-        - name: Benchmark
-          run: npm run benchmark
+        # - name: Benchmark
+        #   run: npm run benchmark
