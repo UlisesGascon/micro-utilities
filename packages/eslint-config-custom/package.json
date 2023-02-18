@@ -11,6 +11,11 @@
     "eslint-config-turbo": "latest",
     "eslint-plugin-react": "7.31.8"
   },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "devDependencies": {
     "typescript": "^4.7.4"
   },
