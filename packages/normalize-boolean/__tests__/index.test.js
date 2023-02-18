@@ -72,5 +72,6 @@ describe('normalize-boolean', () => {
       expect(normalizeBoolean(null)).toBe(false)
       expect(normalizeBoolean('')).toBe(false)
       expect(normalizeBoolean(NaN)).toBe(false)
+      expect(normalizeBoolean(undefined)).toBe(false)
     })
 })
