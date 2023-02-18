@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "Normalize a boolean value",
     "license": "MIT",
-    "main": "./dist/index.js",
+    "main": "./dist/esm/index.js",
     "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
+    "types": "./dist/types/index.d.ts",
     "files": [
         "dist/**"
     ],
@@ -28,7 +28,7 @@
     },
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "tsc",
+        "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
@@ -47,5 +47,10 @@
         "eslint-config-custom": "*",
         "typescript": "^4.5.2",
         "eslint": "8"
+    },
+    "exports": {
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js",
+        "default": "./dist/esm/index.js"
     }
 }

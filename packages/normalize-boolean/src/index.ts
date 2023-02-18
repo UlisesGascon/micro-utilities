@@ -1,4 +1,4 @@
-export default (value:any):boolean => {
+export function normalizeBoolean (value:any):boolean {
     // Ignore non-primitive values
     if (!['boolean', 'string', 'number'].includes(typeof value)) {
       return false
