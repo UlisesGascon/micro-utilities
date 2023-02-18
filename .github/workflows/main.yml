@@ -13,7 +13,7 @@ jobs:
       runs-on: ubuntu-latest
       strategy:
         matrix:
-          node-version: [14.x, 16.x, 17.x, 18.x]
+          node-version: [16.x, 18.x, 19.x]
 
       # To use Remote Caching, uncomment the next lines and follow the steps below.
       # env:
@@ -43,7 +43,7 @@ jobs:
           run: npm run build
  
         - name: Test
-          run: npm run test
+          run: npm run test:coverage
 
-        - name: Benchmark
-          run: npm run benchmark
+        # - name: Benchmark
+        #   run: npm run benchmark
