@@ -16,15 +16,15 @@
     ],
     "author": "Ulises Gascon",
     "bugs": {
-        "url": "https://github.com/UlisesGascon/normalize-boolean/issues"
+        "url": "https://github.com/UlisesGascon/micro-utilities/issues"
     },
-    "homepage": "https://github.com/UlisesGascon/normalize-boolean#readme",
+    "homepage": "https://github.com/UlisesGascon/micro-utilities#readme",
     "engines": {
         "node": ">=14.0.0"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/UlisesGascon/normalize-boolean.git"
+        "url": "git+https://github.com/UlisesGascon/micro-utilities.git"
     },
     "scripts": {
         "clean": "rm -rf dist",
