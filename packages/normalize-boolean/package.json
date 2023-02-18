@@ -1,13 +1,14 @@
 {
     "name": "normalize-boolean",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Normalize a boolean value",
     "license": "MIT",
     "main": "./dist/esm/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/types/index.d.ts",
     "files": [
-        "dist/**"
+        "dist/**",
+        "src/**"
     ],
     "keywords": [
         "normalize",
