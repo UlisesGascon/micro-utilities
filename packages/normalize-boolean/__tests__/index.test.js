@@ -1,6 +1,4 @@
-import {default as normalizeBoolean} from '../src'
-
-console.log(normalizeBoolean)
+import { normalizeBoolean } from '../src'
 
 describe('normalize-boolean', () => {
     it('Should manage capitalize strings', () => {
