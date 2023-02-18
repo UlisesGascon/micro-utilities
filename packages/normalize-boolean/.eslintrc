@@ -4,7 +4,7 @@
         "custom"
     ],
     "parserOptions": {
-      "project": "./tsconfig.json"
+      "project": "./tsconfig.base.json"
     },
     "ignorePatterns": [
         "node_modules/",
