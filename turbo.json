@@ -12,6 +12,9 @@
     "lint": {
       "outputs": []
     },
+    "benchmark": {
+      "outputs": []
+    },
     "test": {},
     "test:watch": {
       "cache": false
