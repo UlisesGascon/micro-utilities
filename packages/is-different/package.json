@@ -1,5 +1,5 @@
 {
-    "name": "is-different",
+    "name": "@ulisesgascon/is-different",
     "version": "1.0.0",
     "description": "A limited way to compare two values and return true if they are different",
     "license": "MIT",
