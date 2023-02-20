@@ -1,5 +1,5 @@
 <p align="center"><h1 align="center">
-  is-different
+  @ulisesgascon/is-different
 </h1>
 
 <p align="center">
@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.org/package/is-different"><img src="https://badgen.net/npm/v/is-different" alt="npm version"/></a>
-  <a href="https://www.npmjs.org/package/is-different"><img src="https://badgen.net/npm/license/is-different" alt="license"/></a>
-  <a href="https://www.npmjs.org/package/is-different"><img src="https://badgen.net/npm/dt/is-different" alt="downloads"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/is-different"><img src="https://badgen.net/npm/v/@ulisesgascon/is-different" alt="npm version"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/is-different"><img src="https://badgen.net/npm/license/@ulisesgascon/is-different" alt="license"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/is-different"><img src="https://badgen.net/npm/dt/@ulisesgascon/is-different" alt="downloads"/></a>
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
@@ -30,7 +30,7 @@ Simple and very opinionated wrapper to manage Boolean conversions
 ## Installation
 
 ```bash
-npm install is-different
+npm install @ulisesgascon/is-different
 ```
 
 ## Usage
@@ -40,8 +40,8 @@ npm install is-different
 **Importation**
 
 ```js
-const { isDifferent } = require('is-different')
-import { isDifferent } from 'is-different'
+const { isDifferent } = require('@ulisesgascon/is-different')
+import { isDifferent } from '@ulisesgascon/is-different'
 ```
 
 **usage**

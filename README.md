@@ -11,7 +11,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 #### Published
 
 - [normalize-boolean](/packages/normalize-boolean/README.md) - _Simple and very opinionated wrapper to manage Boolean conversions_
-- [is-different](/packages/is-different/README.md) - _A limited way to compare two values and return true if they are different_
+- [@ulisesgascon/is-different](/packages/is-different/README.md) - _A limited way to compare two values and return true if they are different_
 
 #### Internal
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
