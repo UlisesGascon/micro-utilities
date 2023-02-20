@@ -45,23 +45,26 @@ const { chunkArray } = require('@ulisesgascon/array-to-chunks')
 import { chunkArray } from '@ulisesgascon/array-to-chunks'
 ```
 
-**usage**
+**Usage**
 
 ```js
 const array = [1,2,3,4,5,6,7,8,9]
-console.log(chunkArray(chunkArray(array, 1)))   // [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
-console.log(chunkArray(chunkArray(array, 2)))   // [[1,2], [3,4], [5,6], [7,8], [9]]
-console.log(chunkArray(chunkArray(array, 3)))   // [[1,2,3], [4,5,6], [7,8,9]]
-console.log(chunkArray(chunkArray(array, 150))) // [[1,2,3,4,5,6,7,8,9]]
+console.log(hunkArray(array, 1))   // [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
+console.log(hunkArray(array, 2))   // [[1,2], [3,4], [5,6], [7,8], [9]]
+console.log(hunkArray(array, 3))   // [[1,2,3], [4,5,6], [7,8,9]]
+console.log(hunkArray(array, 150)) // [[1,2,3,4,5,6,7,8,9]]
 ```
 
 ## Known limitations
 
-This library is using slice to shadow copy the items from the original array.
+This library is using [Array.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to shadow copy the items from the original array.
 
 > Elements of the original array are copied into the returned array as follows:
+>
 > For object references (and not the actual object), slice copies object references into the new array. Both the original and new array refer to the same object. If a referenced object changes, the changes are visible to both the new and original arrays.
+>
 > For strings, numbers and booleans (not String, Number and Boolean objects), slice copies the values into the new array. Changes to the string, number or boolean in one array do not affect the other array. If a new element is added to either array, the other array is not affected.
+>
 > [Explanation about slice method from Naresh Kumar](https://stackoverflow.com/a/47738412)
 
 
