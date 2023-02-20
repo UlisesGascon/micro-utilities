@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/simplify-object",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "A simple way to return a new object with less properties",
     "license": "MIT",
     "main": "./dist/esm/index.js",
