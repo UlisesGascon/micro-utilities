@@ -14,12 +14,13 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 - [@ulisesgascon/is-different](/packages/is-different/README.md) - _A limited way to compare two values and return true if they are different_
 - [@ulisesgascon/array-to-chunks](/packages/array-to-chunks/README.md) - _A simple way to slice an array into chunks_
 - [@ulisesgascon/symplify-object](/packages/symplify-object/README.md) - _A simple way to return a new object with less properties_
+- [@ulisesgascon/soft-assign-deep-property](/packages/soft-assign-deep-property/README.md) - _A simple way to assign a deep property to an object without overwriting any existing properties within it._
 
 #### Internal
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
