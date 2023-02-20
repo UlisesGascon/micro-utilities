@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+      "module": "CommonJS",
+      "outDir": "dist/cjs",
+      "declarationDir": "dist/types",
+      "declaration": true
+  },
+  "files": ["src/index.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.js"]
+}
