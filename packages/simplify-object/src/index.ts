@@ -1,13 +1,15 @@
-interface simplifyPayload {
+interface simplifyPayloadType {
   include?: string[]
   exclude?: string[] 
 }
+
+type OpenObjectType = Record<string, any>;
 
 const isObject = (obj:object):boolean => {
   return typeof obj === 'object' && !Array.isArray(obj) && obj !== null
 }
 
-export function simplifyObject (baseObj:object, operation:simplifyPayload):object {
+export function simplifyObject (baseObj:OpenObjectType, operation:simplifyPayloadType):OpenObjectType {
   if(!isObject(baseObj)) throw new Error('baseObj must be an object')
   if(!isObject(operation)) throw new Error('operation must be an object')
 
@@ -19,7 +21,8 @@ export function simplifyObject (baseObj:object, operation:simplifyPayload):objec
   
   const { include=[], exclude=[] } = operation 
 
-  const simplifiedObject = {}
+  const simplifiedObject:OpenObjectType = {}
+
   Object.keys(baseObj).forEach(key => {
       if(((include.length > 0) && include.includes(key)) || (exclude.length > 0) && !exclude.includes(key)) {
         simplifiedObject[key] = baseObj[key]
