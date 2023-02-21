@@ -1,5 +1,5 @@
 <p align="center"><h1 align="center">
-  normalize-boolean
+  @ulisesgascon/normalize-boolean
 </h1>
 
 <p align="center">
@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.org/package/normalize-boolean"><img src="https://badgen.net/npm/v/normalize-boolean" alt="npm version"/></a>
-  <a href="https://www.npmjs.org/package/normalize-boolean"><img src="https://badgen.net/npm/license/normalize-boolean" alt="license"/></a>
-  <a href="https://www.npmjs.org/package/normalize-boolean"><img src="https://badgen.net/npm/dt/normalize-boolean" alt="downloads"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/normalize-boolean"><img src="https://badgen.net/npm/v/@ulisesgascon/normalize-boolean" alt="npm version"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/normalize-boolean"><img src="https://badgen.net/npm/license/@ulisesgascon/normalize-boolean" alt="license"/></a>
+  <a href="https://www.npmjs.org/package/@ulisesgascon/normalize-boolean"><img src="https://badgen.net/npm/dt/@ulisesgascon/normalize-boolean" alt="downloads"/></a>
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
@@ -30,7 +30,7 @@ Simple and very opinionated wrapper to manage Boolean conversions
 ## Installation
 
 ```bash
-npm install normalize-boolean
+npm install @ulisesgascon/normalize-boolean
 ```
 
 ## Usage
@@ -40,8 +40,8 @@ npm install normalize-boolean
 **Importation**
 
 ```js
-const { normalizeBoolean } = require('normalize-boolean')
-import { normalizeBoolean } from 'normalize-boolean'
+const { normalizeBoolean } = require('@ulisesgascon/normalize-boolean')
+import { normalizeBoolean } from '@ulisesgascon/normalize-boolean'
 ```
 
 **usage**

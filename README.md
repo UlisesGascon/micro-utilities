@@ -10,7 +10,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 #### Published
 
-- [normalize-boolean](/packages/normalize-boolean/README.md) - _Simple and very opinionated wrapper to manage Boolean conversions_
+- [@ulisesgascon/normalize-boolean](/packages/normalize-boolean/README.md) - _Simple and very opinionated wrapper to manage Boolean conversions_
 - [@ulisesgascon/is-different](/packages/is-different/README.md) - _A limited way to compare two values and return true if they are different_
 - [@ulisesgascon/array-to-chunks](/packages/array-to-chunks/README.md) - _A simple way to slice an array into chunks_
 - [@ulisesgascon/simplify-object](/packages/simplify-object/README.md) - _A simple way to return a new object with less properties_
