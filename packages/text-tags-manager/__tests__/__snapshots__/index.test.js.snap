@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`text-tags-manager If no tags found then return the replacement segment wrapped in the tags 1`] = `
+"<!-- MY-TAG:START -->
+This is my new text, you know... the same but more cool!
+<!-- MY-TAG:END -->"
+`;
+
+exports[`text-tags-manager If tags found then replace the content between the tags with the replacement segment 1`] = `
+"
+    This text should remind the same...
+
+<!-- MY-TAG:START -->
+This is my new text, you know... the same but more cool!
+<!-- MY-TAG:END -->
+
+This text will be also unaffected"
+`;
