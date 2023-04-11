@@ -70,7 +70,7 @@ console.log(simpleUser2) //  {name: "Jane",bio: "Hacker life", age: 120 }
 
 ## Known limitations
 
-The new Object has been created by using the [shadow copy](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy) estrategy
+The new Object has been created by using the [shallow copy](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy) estrategy
 
 ## Contributing
 
