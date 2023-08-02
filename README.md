@@ -16,6 +16,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 - [@ulisesgascon/simplify-object](/packages/simplify-object/README.md) - _A simple way to return a new object with less properties_
 - [@ulisesgascon/soft-assign-deep-property](/packages/soft-assign-deep-property/README.md) - _A simple way to assign a deep property to an object without overwriting any existing properties within it._
 - [@ulisesgascon/text-tags-manager](/packages/text-tags-manager/README.md) - _Utils to manage text tags more easy to use, you know what I mean._
+- [@ulisesgascon/string-to-array](/packages/string-to-array/README.md) - _A simple and opinionated way to convert a string to an array._
 
 #### Internal
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
