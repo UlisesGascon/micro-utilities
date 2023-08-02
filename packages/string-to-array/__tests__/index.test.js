@@ -10,7 +10,7 @@ describe('string-to-array', () => {
     })
 
     it('Should remove empty values', () => {
-      expect(stringToArray("John, Lisa, , , James")).toStrictEqual(['John', 'Lisa', 'James'])
+      expect(stringToArray("John, Lisa,  , , James")).toStrictEqual(['John', 'Lisa', 'James'])
     })
 
     it('Should ignore blank spaces', () => {
