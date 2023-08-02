@@ -19,6 +19,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 - [@ulisesgascon/string-to-array](/packages/string-to-array/README.md) - _A simple and opinionated way to convert a string to an array._
 
 #### Internal
+
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -69,8 +70,6 @@ To benchmark all packages, run the following command:
 cd micro-utilities
 npm run benchmark
 ```
-
-
 
 ## Useful Links
 

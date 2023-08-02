@@ -13,19 +13,16 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 A simple way to return a new object with less properties
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
-
 
 ## Installation
 
@@ -40,8 +37,8 @@ npm install @ulisesgascon/simplify-object
 **Importation**
 
 ```js
-const { simplifyObject } = require('@ulisesgascon/simplify-object')
-import { simplifyObject } from '@ulisesgascon/simplify-object'
+const { simplifyObject } = require("@ulisesgascon/simplify-object");
+import { simplifyObject } from "@ulisesgascon/simplify-object";
 ```
 
 **Usage**
@@ -52,20 +49,19 @@ const user = {
   nickname: "JaneDoe",
   isAdmin: true,
   age: 120,
-  bio: "Hacker life"
-}
+  bio: "Hacker life",
+};
 // Just create a copy with less stuff
 const simpleUser = simplifyObject(user, {
-  exclude: ['name', 'bio', 'age']
-})
-console.log(simpleUser) 
+  exclude: ["name", "bio", "age"],
+});
+console.log(simpleUser);
 
 // Just create a copy with specific things
 const simpleUser2 = simplifyObject(user, {
-  include: ['name', 'bio', 'age']
-})
-console.log(simpleUser2) //  {name: "Jane",bio: "Hacker life", age: 120 }
-
+  include: ["name", "bio", "age"],
+});
+console.log(simpleUser2); //  {name: "Jane",bio: "Hacker life", age: 120 }
 ```
 
 ## Known limitations

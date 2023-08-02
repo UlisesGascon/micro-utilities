@@ -13,19 +13,16 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 A simple way to assign a deep property to an object without overwriting any existing properties within it
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
-
 
 ## Installation
 
@@ -40,8 +37,8 @@ npm install @ulisesgascon/soft-assign-deep-property
 **Importation**
 
 ```js
-const { softAssign } = require('@ulisesgascon/soft-assign-deep-property')
-import { softAssign } from '@ulisesgascon/soft-assign-deep-property'
+const { softAssign } = require("@ulisesgascon/soft-assign-deep-property");
+import { softAssign } from "@ulisesgascon/soft-assign-deep-property";
 ```
 
 **Usage**
@@ -50,18 +47,18 @@ import { softAssign } from '@ulisesgascon/soft-assign-deep-property'
 const data = {
   I: {
     will: {
-      say: 'Hello World!' 
-    } 
-  }
-}
+      say: "Hello World!",
+    },
+  },
+};
 
 // ✅ Just add deep properties
-softAssign(data, ['you', 'will', 'say'], 'This is cool!' )
-console.log(data.you.will.say) // This is cool!
+softAssign(data, ["you", "will", "say"], "This is cool!");
+console.log(data.you.will.say); // This is cool!
 
 // ❌ Avoid to modify existing properties
-softAssign(data ['I', 'will', 'say'], 'New Value!')
-console.log(data.I.will.say) // Hello World!
+softAssign(data[("I", "will", "say")], "New Value!");
+console.log(data.I.will.say); // Hello World!
 ```
 
 ## Contributing
