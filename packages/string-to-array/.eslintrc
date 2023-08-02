@@ -1,0 +1,13 @@
+{
+   "root": true,
+    "extends": [
+        "custom"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.base.json"
+    },
+    "ignorePatterns": [
+        "node_modules/",
+        "dist/"
+    ]
+}
