@@ -20,4 +20,14 @@ describe('string-to-array', () => {
     it('Should always return an array', () => {
       expect(stringToArray("")).toStrictEqual([])
     })
+
+    it('Should throw an error if no string provided', () => {
+      expect(() => {
+        stringToArray([])
+      }).toThrow("Source must be a string");
+
+      expect(() => {
+        stringToArray(undefined)
+      }).toThrow("Source must be a string");
+    })
 })
