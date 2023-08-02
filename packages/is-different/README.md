@@ -13,19 +13,16 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 Simple and very opinionated wrapper to manage Boolean conversions
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
-
 
 ## Installation
 
@@ -40,24 +37,24 @@ npm install @ulisesgascon/is-different
 **Importation**
 
 ```js
-const { isDifferent } = require('@ulisesgascon/is-different')
-import { isDifferent } from '@ulisesgascon/is-different'
+const { isDifferent } = require("@ulisesgascon/is-different");
+import { isDifferent } from "@ulisesgascon/is-different";
 ```
 
 **usage**
 
 ```js
-console.log(isDifferent([1,2,3], [1,2]))   // true
-console.log(isDifferent('on', 'off'))      // true
-console.log(isDifferent(true, false))      // true
-console.log(isDifferent({'a':1}, {'a':2})) // true
-console.log(isDifferent(1, 2))             // true 
+console.log(isDifferent([1, 2, 3], [1, 2])); // true
+console.log(isDifferent("on", "off")); // true
+console.log(isDifferent(true, false)); // true
+console.log(isDifferent({ a: 1 }, { a: 2 })); // true
+console.log(isDifferent(1, 2)); // true
 
-console.log(isDifferent([1,2], [1,2]))     // true
-console.log(isDifferent('on', 'on'))       // true
-console.log(isDifferent(true, true))       // true
-console.log(isDifferent({'a':1}, {'a':1})) // true
-console.log(isDifferent(1, 1))             // true 
+console.log(isDifferent([1, 2], [1, 2])); // true
+console.log(isDifferent("on", "on")); // true
+console.log(isDifferent(true, true)); // true
+console.log(isDifferent({ a: 1 }, { a: 1 })); // true
+console.log(isDifferent(1, 1)); // true
 ```
 
 ## Known limitations
@@ -68,10 +65,27 @@ This library is doing a transformation to JSON and comparing both strings, this 
 - Functions type is not supported due JSON definition
 
 ```js
-isDifferentContent ({a: ()=>{return true}},{a: ()=>{return false}}) // false
-isDifferent(() => {return true},()=>{return true}) //false
+isDifferentContent(
+  {
+    a: () => {
+      return true;
+    },
+  },
+  {
+    a: () => {
+      return false;
+    },
+  }
+); // false
+isDifferent(
+  () => {
+    return true;
+  },
+  () => {
+    return true;
+  }
+); //false
 ```
-
 
 ## Contributing
 

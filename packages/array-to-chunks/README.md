@@ -13,20 +13,17 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 A simple way to slice an array into chunks
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
 - Throw an error for non-array elements 🥷
-
 
 ## Installation
 
@@ -41,18 +38,18 @@ npm install @ulisesgascon/array-to-chunks
 **Importation**
 
 ```js
-const { chunkArray } = require('@ulisesgascon/array-to-chunks')
-import { chunkArray } from '@ulisesgascon/array-to-chunks'
+const { chunkArray } = require("@ulisesgascon/array-to-chunks");
+import { chunkArray } from "@ulisesgascon/array-to-chunks";
 ```
 
 **Usage**
 
 ```js
-const array = [1,2,3,4,5,6,7,8,9]
-console.log(hunkArray(array, 1))   // [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
-console.log(hunkArray(array, 2))   // [[1,2], [3,4], [5,6], [7,8], [9]]
-console.log(hunkArray(array, 3))   // [[1,2,3], [4,5,6], [7,8,9]]
-console.log(hunkArray(array, 150)) // [[1,2,3,4,5,6,7,8,9]]
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(hunkArray(array, 1)); // [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
+console.log(hunkArray(array, 2)); // [[1,2], [3,4], [5,6], [7,8], [9]]
+console.log(hunkArray(array, 3)); // [[1,2,3], [4,5,6], [7,8,9]]
+console.log(hunkArray(array, 150)); // [[1,2,3,4,5,6,7,8,9]]
 ```
 
 ## Known limitations
@@ -66,7 +63,6 @@ This library is using [Array.slice()](https://developer.mozilla.org/en-US/docs/W
 > For strings, numbers and booleans (not String, Number and Boolean objects), slice copies the values into the new array. Changes to the string, number or boolean in one array do not affect the other array. If a new element is added to either array, the other array is not affected.
 >
 > [Explanation about slice method from Naresh Kumar](https://stackoverflow.com/a/47738412)
-
 
 ## Contributing
 

@@ -13,19 +13,16 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 Simple and very opinionated wrapper to manage Boolean conversions
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
-
 
 ## Installation
 
@@ -40,53 +37,52 @@ npm install @ulisesgascon/normalize-boolean
 **Importation**
 
 ```js
-const { normalizeBoolean } = require('@ulisesgascon/normalize-boolean')
-import { normalizeBoolean } from '@ulisesgascon/normalize-boolean'
+const { normalizeBoolean } = require("@ulisesgascon/normalize-boolean");
+import { normalizeBoolean } from "@ulisesgascon/normalize-boolean";
 ```
 
 **usage**
 
 ```js
-
 // True and false alias
-console.log(normalizeBoolean('true'))  // true
-console.log(normalizeBoolean('on'))    // true
-console.log(normalizeBoolean('yes'))   // true
-console.log(normalizeBoolean('y'))     // true
-console.log(normalizeBoolean('false')) // false
-console.log(normalizeBoolean('off'))   // false
-console.log(normalizeBoolean('no'))    // false
-console.log(normalizeBoolean('n'))     // false
+console.log(normalizeBoolean("true")); // true
+console.log(normalizeBoolean("on")); // true
+console.log(normalizeBoolean("yes")); // true
+console.log(normalizeBoolean("y")); // true
+console.log(normalizeBoolean("false")); // false
+console.log(normalizeBoolean("off")); // false
+console.log(normalizeBoolean("no")); // false
+console.log(normalizeBoolean("n")); // false
 
 // Numbers as string
-console.log(normalizeBoolean('1'))    // true
-console.log(normalizeBoolean('1.0'))  // true
-console.log(normalizeBoolean('1,0'))  // true
-console.log(normalizeBoolean('0'))    // false
-console.log(normalizeBoolean('0.0'))  // false
-console.log(normalizeBoolean('0,0'))  // false
+console.log(normalizeBoolean("1")); // true
+console.log(normalizeBoolean("1.0")); // true
+console.log(normalizeBoolean("1,0")); // true
+console.log(normalizeBoolean("0")); // false
+console.log(normalizeBoolean("0.0")); // false
+console.log(normalizeBoolean("0,0")); // false
 
 // Numbers
-console.log(normalizeBoolean(1))    // true
-console.log(normalizeBoolean(-1))   // false
-console.log(normalizeBoolean(0))    // false
-console.log(normalizeBoolean(-123)) // false
-console.log(normalizeBoolean(123))  // false
+console.log(normalizeBoolean(1)); // true
+console.log(normalizeBoolean(-1)); // false
+console.log(normalizeBoolean(0)); // false
+console.log(normalizeBoolean(-123)); // false
+console.log(normalizeBoolean(123)); // false
 
 // Non-trimmed or capitalized
-console.log(normalizeBoolean('  OFF')) // false
-console.log(normalizeBoolean(' ON  ')) // true
+console.log(normalizeBoolean("  OFF")); // false
+console.log(normalizeBoolean(" ON  ")); // true
 
 // Non-primary types
-console.log(normalizeBoolean(()=>{})) // false
-console.log(normalizeBoolean({ "hello": "world"})) // false 
-console.log(normalizeBoolean([1,2,3])) // false
+console.log(normalizeBoolean(() => {})); // false
+console.log(normalizeBoolean({ hello: "world" })); // false
+console.log(normalizeBoolean([1, 2, 3])); // false
 
 // Classic Non-values
-console.log(normalizeBoolean(null)) // false
-console.log(normalizeBoolean(undefined)) // false
-console.log(normalizeBoolean("")) // false
-console.log(normalizeBoolean(NaN)) // false
+console.log(normalizeBoolean(null)); // false
+console.log(normalizeBoolean(undefined)); // false
+console.log(normalizeBoolean("")); // false
+console.log(normalizeBoolean(NaN)); // false
 ```
 
 ## Contributing

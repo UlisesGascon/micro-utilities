@@ -13,19 +13,16 @@
   <a href="https://snyk.io/test/github/ulisesgascon/micro-utilities"><img src="https://snyk.io/test/github/ulisesgascon/micro-utilities/badge.svg" alt="Known Vulnerabilities"/></a>
 </p>
 
-
 # About
 
 Utils to manage text tags more easy to use, you know what I mean
 
 ## ❤️ Awesome Features:
 
-
 - Simple and easy to use 🔥
 - Typescript support 💪
 - Zero dependencies 🚀
 - Easy to use and great test coverage ✅
-
 
 ## Installation
 
@@ -40,8 +37,8 @@ npm install @ulisesgascon/text-tags-manager
 **Importation**
 
 ```js
-const { updateOrCreateSegment } = require('@ulisesgascon/text-tags-manager')
-import { updateOrCreateSegment } from '@ulisesgascon/text-tags-manager'
+const { updateOrCreateSegment } = require("@ulisesgascon/text-tags-manager");
+import { updateOrCreateSegment } from "@ulisesgascon/text-tags-manager";
 ```
 
 **Replace content**
@@ -49,6 +46,7 @@ import { updateOrCreateSegment } from '@ulisesgascon/text-tags-manager'
 Original state:
 
 `sample_file.md`
+
 ```
 This text should remind the same...
 
@@ -59,41 +57,43 @@ The old text
 This text will be also unaffected
 ```
 
-Transformation: 
+Transformation:
 
 ```js
-const { readFile, writeFile } = require('fs').promises
+const { readFile, writeFile } = require("fs").promises;
 
-const replacementSegment = 'This is my new text, you know... the same but more cool!'
-const startTag = '<!-- MY-TAG:START -->'
-const endTag = '<!-- MY-TAG:END -->'
+const replacementSegment =
+  "This is my new text, you know... the same but more cool!";
+const startTag = "<!-- MY-TAG:START -->";
+const endTag = "<!-- MY-TAG:END -->";
 
 // Update
-const originalText = await readFile('./sample_file.md')
+const originalText = await readFile("./sample_file.md");
 
-const updatedContent = updateOrCreateSegment({ 
-  original: originalText, 
+const updatedContent = updateOrCreateSegment({
+  original: originalText,
   replacementSegment,
   startTag,
   endTag,
-})
+});
 
-await writeFile('./sample_file.md', updatedContent)
+await writeFile("./sample_file.md", updatedContent);
 
 // Create
-const newContent = updateOrCreateSegment({ 
-  original: '',  // Simulate empty content with an empty string
+const newContent = updateOrCreateSegment({
+  original: "", // Simulate empty content with an empty string
   replacementSegment,
   startTag,
   endTag,
-})
+});
 
-await writeFile('./new_file.md', newContent)
+await writeFile("./new_file.md", newContent);
 ```
 
 Output:
 
 `new_file.md`
+
 ```
 <!-- MY-TAG:START -->
 This is my new text, you know... the same but more cool!
@@ -101,6 +101,7 @@ This is my new text, you know... the same but more cool!
 ```
 
 `sample_file.md`
+
 ```
 This text should remind the same...
 
@@ -110,7 +111,6 @@ This is my new text, you know... the same but more cool!
 
 This text will be also unaffected
 ```
-
 
 ## Contributing
 
