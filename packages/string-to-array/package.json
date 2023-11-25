@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/string-to-array",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "A simple and opinionated way to convert a string to an array.",
     "license": "MIT",
     "main": "./dist/esm/index.js",
