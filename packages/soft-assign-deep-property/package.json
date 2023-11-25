@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/soft-assign-deep-property",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A simple way to assign a deep property to an object without overwriting any existing properties within it",
     "license": "MIT",
     "main": "./dist/esm/index.js",
