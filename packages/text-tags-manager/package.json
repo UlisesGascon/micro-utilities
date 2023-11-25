@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/text-tags-manager",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Utils to manage text tags more easy to use, you know what I mean",
     "license": "MIT",
     "main": "./dist/esm/index.js",
@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/UlisesGascon/micro-utilities#readme",
     "engines": {
-        "node": ">=16.0.0"
+        "node": ">=18.0.0"
     },
     "repository": {
         "type": "git",

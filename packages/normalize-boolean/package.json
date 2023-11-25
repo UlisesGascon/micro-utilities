@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/normalize-boolean",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Normalize a boolean value",
     "license": "MIT",
     "main": "./dist/esm/index.js",
@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/UlisesGascon/micro-utilities#readme",
     "engines": {
-        "node": ">=16.0.0"
+        "node": ">=18.0.0"
     },
     "repository": {
         "type": "git",

@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/string-to-array",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "A simple and opinionated way to convert a string to an array.",
     "license": "MIT",
     "main": "./dist/esm/index.js",
@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/UlisesGascon/micro-utilities#readme",
     "engines": {
-        "node": ">=16.0.0"
+        "node": ">=18.0.0"
     },
     "repository": {
         "type": "git",
