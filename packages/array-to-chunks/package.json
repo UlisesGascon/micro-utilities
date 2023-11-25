@@ -1,6 +1,6 @@
 {
     "name": "@ulisesgascon/array-to-chunks",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "A simple way to slice an array into chunks",
     "license": "MIT",
     "main": "./dist/esm/index.js",
