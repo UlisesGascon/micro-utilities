@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rss-feed-parser Should parse a valid RSS feed 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "description": "<p>Reporting on 35 Issues from 26 authors, 65 Pull Requests from 38 authors, and 13 Discussions from 12 authors.</p>",
+      "guid": "https://github.com/cutenode/retro-weekly/blob/main/retros/2023-11-12.md",
+      "link": "https://github.com/cutenode/retro-weekly/blob/main/retros/2023-11-12.md",
+      "pubDate": "Sun, 12 Nov 2023 00:00:00 GMT",
+      "title": "Retrospective for nodejs from 2023-11-12 to 2023-11-19",
+    },
+    Object {
+      "description": "<p>Reporting on 45 Issues from 25 authors, 55 Pull Requests from 36 authors, and 9 Discussions from 9 authors.</p>",
+      "guid": "https://github.com/cutenode/retro-weekly/blob/main/retros/2023-11-05.md",
+      "link": "https://github.com/cutenode/retro-weekly/blob/main/retros/2023-11-05.md",
+      "pubDate": "Sun, 05 Nov 2023 00:00:00 GMT",
+      "title": "Retrospective for nodejs from 2023-11-05 to 2023-11-12",
+    },
+  ],
+  "metadata": Object {
+    "atom:link": "",
+    "description": "Node.js Core most relevant news",
+    "docs": "https://validator.w3.org/feed/docs/rss2.html",
+    "image": Object {
+      "link": "https://github.com/nodejs/nodejs-news-feeder",
+      "title": "Node.js News",
+      "url": "https://pbs.twimg.com/profile_images/1262824892535373825/BiXDFDDp_400x400.jpg",
+    },
+    "language": "en-us",
+    "lastBuildDate": "Tue, 21 Nov 2023 07:15:00 GMT",
+    "link": "https://nodejs.github.io/nodejs-news-feeder/feed.xml",
+    "pubDate": "Tue, 13 Jun 2023 04:17:50 GMT",
+    "title": "Node.js News",
+  },
+}
+`;
