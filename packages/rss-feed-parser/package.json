@@ -4,7 +4,7 @@
     "description": "A simple and easy to use RSS feed parser",
     "license": "MIT",
     "main": "./dist/esm/index.js",
-    "module": "./dist/index.mjs",
+    "module": "./dist/esm/index.js",
     "types": "./dist/types/index.d.ts",
     "files": [
         "dist/**",
@@ -28,7 +28,9 @@
     },
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
+        "build": "npm run build:esm && npm run build:cjs",
+        "build:cjs": "tsc --project tsconfig.cjs.json && cat >dist/cjs/package.json <<!EOF\n{\n    \"type\": \"commonjs\"\n}\n!EOF",
+        "build:esm": "tsc --project tsconfig.esm.json && cat >dist/esm/package.json <<!EOF\n{\n    \"type\": \"module\"\n}\n!EOF",
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
