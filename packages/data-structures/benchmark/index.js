@@ -2,7 +2,7 @@ const b = require("benny");
 const { LinkedList } = require("../dist/cjs");
 
 b.suite(
-  "Creation",
+  "Initialization",
 
   b.add("Array", () => {
     const list = ["hello world"];
@@ -14,6 +14,6 @@ b.suite(
 
   b.cycle(),
   b.complete(),
-  b.save({ file: "creation", version: "1.0.0" }),
-  b.save({ file: "creation", format: "chart.html" })
+  b.save({ file: "initialization", version: "1.0.0" }),
+  b.save({ file: "initialization", format: "chart.html" })
 );

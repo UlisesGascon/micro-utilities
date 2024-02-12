@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <title>Creation</title>
+    <title>Initialization</title>
     <style>
       body {
         margin: 0;
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="chart1707739815289" width="16" height="9"></canvas>
+      <canvas id="chart1707741743123" width="16" height="9"></canvas>
     </div>
     <script>
       const format = (num) => {
@@ -51,18 +51,18 @@
           chunked.map((chunk) => chunk.join('')).join(' ') + fractionStr
         )
       }
-      const ctx1707739815289 = document
-        .getElementById('chart1707739815289')
+      const ctx1707741743123 = document
+        .getElementById('chart1707741743123')
         .getContext('2d')
-      const chart1707739815289 = new Chart(ctx1707739815289, {
+      const chart1707741743123 = new Chart(ctx1707741743123, {
         type: 'bar',
         data: {
           labels: ["Array","Linked List"],
           datasets: [
             {
-              data: [887531897,92042778],
-              backgroundColor: ["hsl(120, 85%, 55%)","hsl(12.444000000000004, 85%, 55%)"],
-              borderColor: ["hsl(120, 85%, 55%)","hsl(12.444000000000004, 85%, 55%)"],
+              data: [892997157,102568574],
+              backgroundColor: ["hsl(120, 85%, 55%)","hsl(13.787999999999993, 85%, 55%)"],
+              borderColor: ["hsl(120, 85%, 55%)","hsl(13.787999999999993, 85%, 55%)"],
               borderWidth: 2,
             },
           ],
@@ -72,7 +72,7 @@
           plugins: {
             title: {
               display: true,
-              text: 'Creation',
+              text: 'Initialization',
               font: { size: 20 },
               padding: 20,
             },

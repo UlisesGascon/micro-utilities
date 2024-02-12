@@ -70,7 +70,7 @@ console.log(linkedList.tail.next) // null
 
 | Action | Array | Linked List | Details |
 |--------|-------|-------------|---------|
-| Creation | fastest | 89.63% slower | [details](benchmark/results/creation.chart.html) |
+| Initialization | fastest | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
 
 
 
