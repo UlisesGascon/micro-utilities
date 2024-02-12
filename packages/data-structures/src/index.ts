@@ -19,4 +19,12 @@ export class LinkedList {
     this.tail = this.head
     this.length = 1
   }
+
+  public push (value: any) {
+    const node = new Node(value)
+    this.tail.next = node
+    this.tail = node
+    this.length++
+    return this
+  }
 }

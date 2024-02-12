@@ -64,6 +64,9 @@ console.log(linkedList.head.value) // Hello World
 console.log(linkedList.head.next) // null
 console.log(linkedList.tail.value) // Hello World
 console.log(linkedList.tail.next) // null
+linkedList.push("Second Item")
+console.log(linkedList.head.next.value) // Second Item
+console.log(linkedList.tail.value) // Second Item
 ```
 
 **Performance**
@@ -71,6 +74,7 @@ console.log(linkedList.tail.next) // null
 | Action | Array | Linked List | Details |
 |--------|-------|-------------|---------|
 | Initialization | fastest | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
+| Push | fastest | 1.98% slower | [details](benchmark/results/push.chart.html) |
 
 
 
