@@ -1,0 +1,27 @@
+{
+  "name": "Convert Items to Set",
+  "date": "2024-02-12T18:48:35.811Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 32997,
+      "margin": 1.02,
+      "percentSlower": 4.42
+    },
+    {
+      "name": "Linked List",
+      "ops": 34523,
+      "margin": 0.86,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Linked List",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Array",
+    "index": 0
+  }
+}

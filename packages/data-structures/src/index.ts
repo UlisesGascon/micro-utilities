@@ -97,4 +97,14 @@ export class LinkedList {
     }
     return arr
   }
+
+  public toSet (): Set<any> {
+    const set = new Set()
+    let current: Node | null = this.head
+    while (current != null) {
+      set.add(current.value)
+      current = current.next
+    }
+    return set
+  }
 }

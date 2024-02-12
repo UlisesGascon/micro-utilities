@@ -67,10 +67,17 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.tail).toBe(null)
     })
 
-    it('Convert to array', () => {
+    it('Convert to Array', () => {
       const linkedList = new LinkedList(value)
         .push("Item 2")
         .push("Item 3")
       expect(linkedList.toArray()).toEqual([value, "Item 2", "Item 3"])
+    })
+
+    it('Convert to Set', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+        .push("Item 3")
+      expect(linkedList.toSet()).toEqual(new Set([value, "Item 2", "Item 3"]))
     })
 })
