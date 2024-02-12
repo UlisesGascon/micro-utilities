@@ -2,7 +2,7 @@ class Node {
   value: any;
   next: Node | null;
 
-  constructor(value){
+  constructor(value: any){
       this.value = value;
       this.next = null;
   }
@@ -13,7 +13,7 @@ export class LinkedList {
   tail: Node;
   length: number;
 
-  constructor (value) {
+  constructor (value:any) {
     const node = new Node(value)
     this.head = node
     this.tail = this.head
