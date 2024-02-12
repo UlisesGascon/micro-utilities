@@ -54,4 +54,18 @@ export class LinkedList {
     return temp.value
   }
 
+  public shift (value:any) :any {
+    if(this.head == null) {
+      return undefined
+    }
+
+    const temp = this.head
+    this.head = temp.next
+    this.length--
+    if(this.length === 0) {
+      this.tail = null
+    }
+    return temp.value
+  }
+
 }

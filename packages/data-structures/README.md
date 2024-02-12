@@ -72,6 +72,11 @@ console.log(removedItem) // Second Item
 console.log(linkedList.length) // 1
 console.log(linkedList.head.value) // Hello World
 console.log(linkedList.tail.value) // Hello World
+const firstItem = linkedList.shift()
+console.log(firstItem) // Hello World
+console.log(linkedList.length) // 0
+console.log(linkedList.head) // null
+console.log(linkedList.tail) // null
 ```
 
 **Performance**
@@ -81,6 +86,7 @@ console.log(linkedList.tail.value) // Hello World
 | Initialization | fastest | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
 | Push | fastest | 1.98% slower | [details](benchmark/results/push.chart.html) |
 | Pop | fastest | 48.38% slower | [details](benchmark/results/pop.chart.html) |
+| Shift | 40.88% slower | fastest | [details](benchmark/results/shift.chart.html) |
 
 
 

@@ -34,4 +34,16 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.head).toBe(null)
       expect(linkedList.tail).toBe(null)
     })
+
+    it('Shift items', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+      expect(linkedList.length).toBe(2)
+      expect(linkedList.shift()).toBe(value)
+      expect(linkedList.length).toBe(1)
+      expect(linkedList.shift()).toBe("Item 2")
+      expect(linkedList.length).toBe(0)
+      expect(linkedList.head).toBe(null)
+      expect(linkedList.tail).toBe(null)
+    })
 })

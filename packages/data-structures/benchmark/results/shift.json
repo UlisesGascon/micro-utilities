@@ -1,0 +1,27 @@
+{
+  "name": "Shift Items",
+  "date": "2024-02-12T17:21:26.663Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 860833,
+      "margin": 1.04,
+      "percentSlower": 40.88
+    },
+    {
+      "name": "Linked List",
+      "ops": 1456014,
+      "margin": 1.56,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Linked List",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Array",
+    "index": 0
+  }
+}
