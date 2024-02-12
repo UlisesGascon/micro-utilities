@@ -68,7 +68,12 @@ console.log(linkedList.tail.next) // null
 
 **Performance**
 
-_TBD_
+| Action | Array | Linked List | Details |
+|--------|-------|-------------|---------|
+| Creation | fastest | 89.63% slower | [details](benchmark/results/creation.chart.html) |
+
+
+
 
 ## Contributing
 

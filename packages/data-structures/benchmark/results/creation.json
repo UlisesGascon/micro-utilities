@@ -1,0 +1,27 @@
+{
+  "name": "Creation",
+  "date": "2024-02-12T12:10:15.289Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 887531897,
+      "margin": 3.01,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 92042778,
+      "margin": 1.4,
+      "percentSlower": 89.63
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}
