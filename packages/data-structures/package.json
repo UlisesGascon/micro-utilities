@@ -35,7 +35,7 @@
         "test:coverage": "jest --coverage",
         "lint": "eslint . --ext .ts",
         "lint:fix": "eslint . --ext .ts --fix",
-        "benchmark": "node benchmark/index.js"
+        "benchmark": "npm run build && node benchmark/index.js"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.20.2",
