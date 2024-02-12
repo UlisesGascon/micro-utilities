@@ -56,4 +56,14 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.tail.value).toBe(value)
       expect(linkedList.tail.next).toBe(null)
     })
+
+    it('Purge items', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+      expect(linkedList.length).toBe(2)
+      linkedList.purge()
+      expect(linkedList.length).toBe(0)
+      expect(linkedList.head).toBe(null)
+      expect(linkedList.tail).toBe(null)
+    })
 })

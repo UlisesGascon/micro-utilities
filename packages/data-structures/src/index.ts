@@ -80,4 +80,11 @@ export class LinkedList {
     this.length++
     return this
   }
+
+  public purge () :LinkedList {
+    this.head = null
+    this.tail = null
+    this.length = 0
+    return this
+  }
 }

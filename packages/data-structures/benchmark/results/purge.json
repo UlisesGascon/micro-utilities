@@ -1,0 +1,33 @@
+{
+  "name": "Purge Items",
+  "date": "2024-02-12T18:02:50.269Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array (length to 0)",
+      "ops": 13224301,
+      "margin": 7.49,
+      "percentSlower": 97.79
+    },
+    {
+      "name": "Array (new array)",
+      "ops": 54751178,
+      "margin": 4.71,
+      "percentSlower": 90.83
+    },
+    {
+      "name": "Linked List",
+      "ops": 597122224,
+      "margin": 2.25,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Linked List",
+    "index": 2
+  },
+  "slowest": {
+    "name": "Array (length to 0)",
+    "index": 0
+  }
+}

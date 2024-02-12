@@ -81,6 +81,10 @@ linkedList.unshift("new Item")
 console.log(linkedList.length) // 1
 console.log(linkedList.head.value) // new Item
 console.log(linkedList.tail.value) // new Item
+linkedList.purge()
+console.log(linkedList.length) // 0
+console.log(linkedList.head) // null
+console.log(linkedList.tail) // null
 ```
 
 **Performance**
@@ -92,6 +96,7 @@ console.log(linkedList.tail.value) // new Item
 | Pop | **fastest** | 48.38% slower | [details](benchmark/results/pop.chart.html) |
 | Shift | 40.88% slower | **fastest** | [details](benchmark/results/shift.chart.html) |
 | Unshift | 93.52% slower | **fastest** | [details](benchmark/results/unshift.chart.html) |
+| Purge | 97.79% slower | **faster** | [details](benchmark/results/purge.chart.html) |
 
 
 
