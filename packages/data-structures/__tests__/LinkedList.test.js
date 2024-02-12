@@ -22,4 +22,16 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.tail.value).toBe("Item 3")
       expect(linkedList.tail.next).toBe(null)
     })
+
+    it('Pop items', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+      expect(linkedList.length).toBe(2)
+      expect(linkedList.pop()).toBe("Item 2")
+      expect(linkedList.length).toBe(1)
+      expect(linkedList.pop()).toBe(value)
+      expect(linkedList.length).toBe(0)
+      expect(linkedList.head).toBe(null)
+      expect(linkedList.tail).toBe(null)
+    })
 })

@@ -67,6 +67,11 @@ console.log(linkedList.tail.next) // null
 linkedList.push("Second Item")
 console.log(linkedList.head.next.value) // Second Item
 console.log(linkedList.tail.value) // Second Item
+const removedItem = linkedList.pop()
+console.log(removedItem) // Second Item
+console.log(linkedList.length) // 1
+console.log(linkedList.head.value) // Hello World
+console.log(linkedList.tail.value) // Hello World
 ```
 
 **Performance**
@@ -75,6 +80,7 @@ console.log(linkedList.tail.value) // Second Item
 |--------|-------|-------------|---------|
 | Initialization | fastest | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
 | Push | fastest | 1.98% slower | [details](benchmark/results/push.chart.html) |
+| Pop | fastest | 48.38% slower | [details](benchmark/results/pop.chart.html) |
 
 
 

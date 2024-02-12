@@ -1,0 +1,27 @@
+{
+  "name": "Pop Items",
+  "date": "2024-02-12T17:15:32.482Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 1349703,
+      "margin": 1.63,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 696763,
+      "margin": 2.8,
+      "percentSlower": 48.38
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}
