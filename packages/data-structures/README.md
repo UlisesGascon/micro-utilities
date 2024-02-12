@@ -15,7 +15,7 @@
 
 # About
 
-Useful data structures for quick and easy implementation
+Useful data structures for quick and easy implementation. This library is a personal implementation from the classic computing data structures, based on the popular repository [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms) and other sources.
 
 ## ❤️ Awesome Features:
 
@@ -37,6 +37,16 @@ npm install @ulisesgascon/data-structures
 ## Usage
 
 ### Linked List
+
+![Explanation Diagram from ](https://raw.githubusercontent.com/trekhleb/javascript-algorithms/8fd8e752eaec9d6f986b344af3f548a64f283e1f/src/data-structures/linked-list/images/linked-list.jpeg)
+
+_Image from [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)_
+
+**Resources**
+- [trekhleb/javascript-algorithms | Linked List](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/linked-list)
+- [Wikipedia | Linked List](https://en.wikipedia.org/wiki/Linked_list)
+- [Youtube | HackerRank - Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&index=2&t=1s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+
 
 **Importation**
 
