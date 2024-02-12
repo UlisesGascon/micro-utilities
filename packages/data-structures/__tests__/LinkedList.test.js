@@ -46,4 +46,14 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.head).toBe(null)
       expect(linkedList.tail).toBe(null)
     })
+
+    it('Unshift items', () => {
+      const linkedList = new LinkedList(value)
+        .unshift("Another Item")
+      expect(linkedList.length).toBe(2)
+      expect(linkedList.head.value).toBe("Another Item")
+      expect(linkedList.head.next.value).toBe(value)
+      expect(linkedList.tail.value).toBe(value)
+      expect(linkedList.tail.next).toBe(null)
+    })
 })

@@ -77,16 +77,21 @@ console.log(firstItem) // Hello World
 console.log(linkedList.length) // 0
 console.log(linkedList.head) // null
 console.log(linkedList.tail) // null
+linkedList.unshift("new Item")
+console.log(linkedList.length) // 1
+console.log(linkedList.head.value) // new Item
+console.log(linkedList.tail.value) // new Item
 ```
 
 **Performance**
 
 | Action | Array | Linked List | Details |
 |--------|-------|-------------|---------|
-| Initialization | fastest | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
-| Push | fastest | 1.98% slower | [details](benchmark/results/push.chart.html) |
-| Pop | fastest | 48.38% slower | [details](benchmark/results/pop.chart.html) |
-| Shift | 40.88% slower | fastest | [details](benchmark/results/shift.chart.html) |
+| Initialization | **fastest** | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
+| Push | **fastest** | 1.98% slower | [details](benchmark/results/push.chart.html) |
+| Pop | **fastest** | 48.38% slower | [details](benchmark/results/pop.chart.html) |
+| Shift | 40.88% slower | **fastest** | [details](benchmark/results/shift.chart.html) |
+| Unshift | 93.52% slower | **fastest** | [details](benchmark/results/unshift.chart.html) |
 
 
 

@@ -68,4 +68,16 @@ export class LinkedList {
     return temp.value
   }
 
+  public unshift (value:any) :LinkedList {
+    const node = new Node(value)
+    if(this.head == null) {
+      this.head = node
+      this.tail = this.head
+    } else {
+      node.next = this.head
+      this.head = node
+    }
+    this.length++
+    return this
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "Unshift Items",
+  "date": "2024-02-12T17:44:27.151Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 12959,
+      "margin": 1.06,
+      "percentSlower": 93.52
+    },
+    {
+      "name": "Linked List",
+      "ops": 200034,
+      "margin": 0.5,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Linked List",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Array",
+    "index": 0
+  }
+}
