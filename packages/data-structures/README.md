@@ -48,7 +48,12 @@ import { LinkedList } from "@ulisesgascon/data-structures";
 **usage**
 
 ```js
-// TBD
+const linkedList = new LinkedList("Hello World")
+console.log(linkedList.length) // 1
+console.log(linkedList.head.value) // Hello World
+console.log(linkedList.head.next) // null
+console.log(linkedList.tail.value) // Hello World
+console.log(linkedList.tail.next) // null
 ```
 
 **Performance**
