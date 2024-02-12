@@ -67,6 +67,8 @@ console.log(linkedList.tail.next) // null
 linkedList.push("Second Item")
 console.log(linkedList.head.next.value) // Second Item
 console.log(linkedList.tail.value) // Second Item
+const arrItems = linkedList.toArray()
+console.log(arrItems) // ["Hello World", "Second Item"]
 const removedItem = linkedList.pop()
 console.log(removedItem) // Second Item
 console.log(linkedList.length) // 1
@@ -97,6 +99,7 @@ console.log(linkedList.tail) // null
 | Shift | 40.88% slower | **fastest** | [details](benchmark/results/shift.chart.html) |
 | Unshift | 93.52% slower | **fastest** | [details](benchmark/results/unshift.chart.html) |
 | Purge | 97.79% slower | **faster** | [details](benchmark/results/purge.chart.html) |
+| Array Conversion | N/A | N/A | N/A |
 
 
 

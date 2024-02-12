@@ -87,4 +87,14 @@ export class LinkedList {
     this.length = 0
     return this
   }
+
+  public toArray (): any[] {
+    const arr: any[] = []
+    let current: Node | null = this.head
+    while (current != null) {
+      arr.push(current.value)
+      current = current.next
+    }
+    return arr
+  }
 }

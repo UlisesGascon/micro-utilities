@@ -66,4 +66,11 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.head).toBe(null)
       expect(linkedList.tail).toBe(null)
     })
+
+    it('Convert to array', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+        .push("Item 3")
+      expect(linkedList.toArray()).toEqual([value, "Item 2", "Item 3"])
+    })
 })
