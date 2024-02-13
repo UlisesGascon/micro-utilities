@@ -22,6 +22,9 @@ export class LinkedList {
 
   public push (value: any):LinkedList {
     const node = new Node(value)
+    if (this.head === null) {
+      this.head = node;
+    }
     if(this.tail != null) {
       this.tail.next = node
     }
