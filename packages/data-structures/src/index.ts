@@ -25,7 +25,7 @@ export class LinkedList {
     if (this.head === null) {
       this.head = node;
     }
-    if(this.tail != null) {
+    if(this.tail !== null) {
       this.tail.next = node
     }
     this.tail = node
@@ -47,7 +47,7 @@ export class LinkedList {
       return temp.value
     }
 
-    while (temp.next != null) {
+    while (temp.next !== null) {
       temp = temp.next
     }
 
@@ -94,7 +94,7 @@ export class LinkedList {
   public toArray (): any[] {
     const arr: any[] = []
     let current: Node | null = this.head
-    while (current != null) {
+    while (current !== null) {
       arr.push(current.value)
       current = current.next
     }
@@ -104,7 +104,7 @@ export class LinkedList {
   public toSet (): Set<any> {
     const set = new Set()
     let current: Node | null = this.head
-    while (current != null) {
+    while (current !== null) {
       set.add(current.value)
       current = current.next
     }
@@ -121,7 +121,7 @@ export class LinkedList {
 
   public find (cb: (value: any) => boolean): Node | undefined {
     let current: Node | null = this.head
-    while (current != null) {
+    while (current !== null) {
        // eslint-disable-next-line n/no-callback-literal
       if(cb(current?.value)) {
         break;
@@ -136,7 +136,7 @@ export class LinkedList {
     let current: Node | null = this.head
     let index = 0
     let match = false
-    while (current != null) {
+    while (current !== null) {
       if(cb(current.value)) {
         match = true
         break;
@@ -184,10 +184,11 @@ export class LinkedList {
     let previous: Node | null = null
     while (counter < index) {
       previous = current
-      current = ((current?.next) != null) || null
+      // eslint-disable-next-line
+      current = current!.next
       counter++
     }
-    if(previous != null) {
+    if(previous !== null) {
       previous.next = node
     }
     node.next = current
