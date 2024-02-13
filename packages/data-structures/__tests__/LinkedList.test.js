@@ -107,6 +107,14 @@ describe('data-structures: LinkedList', () => {
       linkedList.push("Item 2")
       expect(linkedList.atLast()).toBe("Item 2")
     })
+    it('Find in items', () => {
+      const linkedList = new LinkedList(1)
+        .push(10)
+        .push(200)
+        .push(500)
+      expect(linkedList.find((el => el >= 25))).toBe(200)
+      expect(linkedList.find((el => el <= 0))).toBe(undefined)
+    })
 })
 
 describe('data-structures: LinkedList (Edge Cases)', () => {
@@ -165,5 +173,10 @@ describe('data-structures: LinkedList (Edge Cases)', () => {
     const linkedList = new LinkedList(value).purge()
     expect(linkedList.length).toBe(0)
     expect(linkedList.toSet()).toEqual(new Set())
+  })
+  it('Use .find() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.find((el => el >= 25))).toBe(undefined)
   })
 })

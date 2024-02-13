@@ -93,6 +93,8 @@ linkedList.purge()
 console.log(linkedList.length) // 0
 console.log(linkedList.head) // null
 console.log(linkedList.tail) // null
+linkedList.push(10).push(20).push(30)
+console.log(linkedList.find(item => item > 20)) // 30
 ```
 
 **Performance**
@@ -110,6 +112,7 @@ console.log(linkedList.tail) // null
 | at(n) | **fastests** | 99.97% slower | [details](benchmark/results/at.chart.html) |
 | atFirst | **fastest** | 2.49% slower | [details](benchmark/results/atfirst.chart.html) |
 | atLast | **fastest** | 81.74% slower | [details](benchmark/results/atlast.chart.html) |
+| find | **fastest** | 81.29% slower | [details](benchmark/results/find.chart.html) |
 
 
 

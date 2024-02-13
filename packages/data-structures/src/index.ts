@@ -119,6 +119,19 @@ export class LinkedList {
     return this.at(this.length - 1)
   }
 
+  public find (cb: (value: any) => boolean): Node | undefined {
+    let current: Node | null = this.head
+    while (current != null) {
+       // eslint-disable-next-line n/no-callback-literal
+      if(cb(current?.value)) {
+        break;
+      }
+      current = current.next
+    }
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+    return current?.value || undefined
+  }
+
   public at (index: number) :Node | undefined {
     if(index >= this.length || index < 0) {
       return undefined
