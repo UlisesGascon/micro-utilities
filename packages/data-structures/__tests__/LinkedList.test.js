@@ -1,7 +1,9 @@
 import { LinkedList } from '../src'
 
+const value = "Item 1"
+
+
 describe('data-structures: LinkedList', () => {
-    const value = "Item 1"
 
     it('Create a linked list', () => {
       const linkedList = new LinkedList(value)
@@ -105,4 +107,63 @@ describe('data-structures: LinkedList', () => {
       linkedList.push("Item 2")
       expect(linkedList.atLast()).toBe("Item 2")
     })
+})
+
+describe('data-structures: LinkedList (Edge Cases)', () => {
+  it('Use .at() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.at(0)).toBe(undefined)
+    expect(linkedList.at(1)).toBe(undefined)
+  })
+  it('Use .atFirst() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.atFirst()).toBe(undefined)
+  })
+  it('Use .atLast() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.atLast()).toBe(undefined)
+  })
+  it('Use .pop() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.pop()).toBe(undefined)
+  })
+  it('Use .shift() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.shift()).toBe(undefined)
+  })
+  it('Use .unshift() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    linkedList.unshift("Another Item")
+    expect(linkedList.length).toBe(1)
+    expect(linkedList.head.value).toBe("Another Item")
+    expect(linkedList.head.next).toBe(null)
+    expect(linkedList.tail.value).toBe("Another Item")
+    expect(linkedList.tail.next).toBe(null)
+  })
+  it('Use .push() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    linkedList.push("Another Item")
+    expect(linkedList.length).toBe(1)
+    expect(linkedList.head.value).toBe("Another Item")
+    expect(linkedList.head.next).toBe(null)
+    expect(linkedList.tail.value).toBe("Another Item")
+    expect(linkedList.tail.next).toBe(null)
+  })
+  it('Use .toArray() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.toArray()).toEqual([])
+  })
+  it('Use .toSet() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.toSet()).toEqual(new Set())
+  })
 })
