@@ -96,6 +96,9 @@ console.log(linkedList.tail) // null
 linkedList.push(10).push(20).push(30)
 console.log(linkedList.find(item => item > 20)) // 30
 console.log(linkedList.findIndex(item => item > 20)) // 2
+linkedList.insert(1, 15)
+console.log(linkedList.at(1)) // 15
+console.log(linkedList.at(2)) // 20
 ```
 
 **Performance**
@@ -115,6 +118,7 @@ console.log(linkedList.findIndex(item => item > 20)) // 2
 | atLast | **fastest** | 81.74% slower | [details](benchmark/results/atlast.chart.html) |
 | find | **fastest** | 81.29% slower | [details](benchmark/results/find.chart.html) |
 | findIndex | **fastest** | 84.51% slower | [details](benchmark/results/findindex.chart.html) |
+| insert(n) | **fastest** | 99.16% slower | [details](benchmark/results/insert.chart.html) |
 
 
 

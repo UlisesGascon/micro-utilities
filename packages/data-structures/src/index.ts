@@ -169,4 +169,29 @@ export class LinkedList {
     }
     return current?.value
   }
+
+  public insert (index: number, value: any) :LinkedList {
+    if(index >= this.length) {
+      return this.push(value)
+    }
+    if(index <= 0) {
+      return this.unshift(value)
+    }
+
+    const node = new Node(value)
+    let counter = 0
+    let current: Node | null = this.head
+    let previous: Node | null = null
+    while (counter < index) {
+      previous = current
+      current = ((current?.next) != null) || null
+      counter++
+    }
+    if(previous != null) {
+      previous.next = node
+    }
+    node.next = current
+    this.length++
+    return this
+  }
 }

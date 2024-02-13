@@ -1,0 +1,33 @@
+{
+  "name": "Insert Items",
+  "date": "2024-02-13T17:46:27.224Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array (Splice)",
+      "ops": 16083984,
+      "margin": 1.87,
+      "percentSlower": 72.32
+    },
+    {
+      "name": "Array (Reduce)",
+      "ops": 58098301,
+      "margin": 2.8,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 490176,
+      "margin": 5.11,
+      "percentSlower": 99.16
+    }
+  ],
+  "fastest": {
+    "name": "Array (Reduce)",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 2
+  }
+}
