@@ -1,0 +1,27 @@
+{
+  "name": "Remove Items",
+  "date": "2024-02-13T19:01:17.680Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 23671020,
+      "margin": 2.72,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 1210333,
+      "margin": 1.74,
+      "percentSlower": 94.89
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}

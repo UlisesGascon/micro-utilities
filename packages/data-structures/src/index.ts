@@ -57,7 +57,7 @@ export class LinkedList {
     return temp.value
   }
 
-  public shift (value:any) :any {
+  public shift () :any {
     if(this.head == null) {
       return undefined
     }
@@ -211,5 +211,40 @@ export class LinkedList {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     current!.value = value
     return this
+  }
+
+  public remove(index: number): any | undefined {
+    if (index >= this.length || index < 0) {
+      return undefined;
+    }
+
+    let removedValue: any;
+
+    if (index === 0 && this.head !== null) {
+      removedValue = this.head.value;
+      this.head = this.head.next;
+    } else {
+      let current: Node | null = this.head;
+      let previous: Node | null = null;
+      let counter = 0;
+
+      while (counter < index) {
+        previous = current;
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        current = current!.next;
+        counter++;
+      }
+
+      if ((previous != null) && (current != null)) {
+        removedValue = current.value;
+        previous.next = current.next;
+        if (previous.next === null) {
+          this.tail = previous;
+        }
+      }
+    }
+
+    this.length--;
+    return removedValue;
   }
 }

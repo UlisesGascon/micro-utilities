@@ -101,6 +101,9 @@ console.log(linkedList.at(1)) // 15
 console.log(linkedList.at(2)) // 20
 linkedList.replace(2, "replaced item")
 console.log(linkedList.at(2)) // replaced item
+const deletedItem = linkedList.remove(2)
+console.log(deletedItem) // replaced item
+console.log(linkedList.at(2)) // undefined
 ```
 
 **Performance**
@@ -122,6 +125,7 @@ console.log(linkedList.at(2)) // replaced item
 | findIndex | **fastest** | 84.51% slower | [details](benchmark/results/findindex.chart.html) |
 | insert(n) | **fastest** | 99.16% slower | [details](benchmark/results/insert.chart.html) |
 | replace(n) | **fastest** | 99.85% slower | [details](benchmark/results/replace.chart.html) |
+| remove(n) | **fastest** | 94.89% slower | [details](benchmark/results/remove.chart.html) |
 
 
 
