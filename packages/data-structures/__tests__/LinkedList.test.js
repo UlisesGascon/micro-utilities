@@ -115,6 +115,14 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.find((el => el >= 25))).toBe(200)
       expect(linkedList.find((el => el <= 0))).toBe(undefined)
     })
+    it('find Index in items', () => {
+      const linkedList = new LinkedList(1)
+        .push(10)
+        .push(200)
+        .push(500)
+      expect(linkedList.findIndex((el => el >= 25))).toBe(2)
+      expect(linkedList.findIndex((el => el <= 0))).toBe(-1)
+    })
 })
 
 describe('data-structures: LinkedList (Edge Cases)', () => {
@@ -178,5 +186,10 @@ describe('data-structures: LinkedList (Edge Cases)', () => {
     const linkedList = new LinkedList(value).purge()
     expect(linkedList.length).toBe(0)
     expect(linkedList.find((el => el >= 25))).toBe(undefined)
+  })
+  it('Use .findIndex() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.findIndex((el => el >= 25))).toBe(-1)
   })
 })

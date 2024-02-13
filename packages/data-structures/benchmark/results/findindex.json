@@ -1,0 +1,27 @@
+{
+  "name": "Find an item index",
+  "date": "2024-02-13T17:07:24.746Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 1291073,
+      "margin": 62.84,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 199994,
+      "margin": 6.42,
+      "percentSlower": 84.51
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}

@@ -132,6 +132,21 @@ export class LinkedList {
     return current?.value || undefined
   }
 
+  public findIndex (cb: (value: any) => boolean): number {
+    let current: Node | null = this.head
+    let index = 0
+    let match = false
+    while (current != null) {
+      if(cb(current.value)) {
+        match = true
+        break;
+      }
+      current = current.next
+      index++
+    }
+    return match ? index : -1
+  }
+
   public at (index: number) :Node | undefined {
     if(index >= this.length || index < 0) {
       return undefined
