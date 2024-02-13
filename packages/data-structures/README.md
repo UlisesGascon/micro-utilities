@@ -99,6 +99,8 @@ console.log(linkedList.findIndex(item => item > 20)) // 2
 linkedList.insert(1, 15)
 console.log(linkedList.at(1)) // 15
 console.log(linkedList.at(2)) // 20
+linkedList.replace(2, "replaced item")
+console.log(linkedList.at(2)) // replaced item
 ```
 
 **Performance**
@@ -119,6 +121,7 @@ console.log(linkedList.at(2)) // 20
 | find | **fastest** | 81.29% slower | [details](benchmark/results/find.chart.html) |
 | findIndex | **fastest** | 84.51% slower | [details](benchmark/results/findindex.chart.html) |
 | insert(n) | **fastest** | 99.16% slower | [details](benchmark/results/insert.chart.html) |
+| replace(n) | **fastest** | 99.85% slower | [details](benchmark/results/replace.chart.html) |
 
 
 

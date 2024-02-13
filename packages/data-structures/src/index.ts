@@ -194,4 +194,21 @@ export class LinkedList {
     this.length++
     return this
   }
+
+  public replace (index: number, value: any) :LinkedList {
+    if(index >= this.length || index < 0) {
+      return this
+    }
+
+    let counter = 0
+    let current: Node | null = this.head
+    while (counter < index) {
+      // eslint-disable-next-line
+      current = current!.next
+      counter++
+    }
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    current!.value = value
+    return this
+  }
 }
