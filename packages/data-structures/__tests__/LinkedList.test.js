@@ -169,6 +169,18 @@ describe('data-structures: LinkedList', () => {
       expect(linkedList.head.next).toBe(null)
       expect(linkedList.tail.next).toBe(null)
     })
+    it('Reverse items', () => {
+      const linkedList = new LinkedList(1)
+        .push(10)
+        .push(200)
+        .push(500)
+      linkedList.reverse()
+      expect(linkedList.length).toBe(4)
+      expect(linkedList.at(0)).toBe(500)
+      expect(linkedList.at(1)).toBe(200)
+      expect(linkedList.at(2)).toBe(10)
+      expect(linkedList.at(3)).toBe(1)
+    })
 })
 
 describe('data-structures: LinkedList (Edge Cases)', () => {
@@ -314,5 +326,13 @@ describe('data-structures: LinkedList (Edge Cases)', () => {
     expect(linkedList.head.next).toBe(null)
     expect(linkedList.tail.value).toBe(value)
     expect(linkedList.tail.next).toBe(null)
+  })
+  it('Use .reverse() with an empty list', () => {
+    const linkedList = new LinkedList(value).purge()
+    expect(linkedList.length).toBe(0)
+    linkedList.reverse()
+    expect(linkedList.length).toBe(0)
+    expect(linkedList.head).toBe(null)
+    expect(linkedList.tail).toBe(null)
   })
 })

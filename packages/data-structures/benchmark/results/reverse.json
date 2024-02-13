@@ -1,0 +1,27 @@
+{
+  "name": "Reverse Items",
+  "date": "2024-02-13T19:38:21.599Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 837316,
+      "margin": 1.65,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 278542,
+      "margin": 3.03,
+      "percentSlower": 66.73
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}

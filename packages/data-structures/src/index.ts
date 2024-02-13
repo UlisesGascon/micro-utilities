@@ -247,4 +247,26 @@ export class LinkedList {
     this.length--;
     return removedValue;
   }
+
+  reverse(): LinkedList {
+    if (this.head === null) {
+      return this;
+    }
+
+    let current: Node | null = this.head;
+    let prev: Node | null = null;
+    let next: Node | null = null;
+
+    while (current !== null) {
+      next = current.next;
+      current.next = prev;
+      prev = current;
+      current = next;
+    }
+
+    this.tail = this.head;
+    this.head = prev;
+
+    return this;
+  }
 }

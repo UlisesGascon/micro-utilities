@@ -104,6 +104,9 @@ console.log(linkedList.at(2)) // replaced item
 const deletedItem = linkedList.remove(2)
 console.log(deletedItem) // replaced item
 console.log(linkedList.at(2)) // undefined
+linkedList.push(40).push(50).push(60)
+const revertedList = linkedList.reverse().toArray()
+console.log(revertedList) // [60, 50, 40, 15, 10]
 ```
 
 **Performance**
@@ -126,8 +129,9 @@ console.log(linkedList.at(2)) // undefined
 | insert(n) | **fastest** | 99.16% slower | [details](benchmark/results/insert.chart.html) |
 | replace(n) | **fastest** | 99.85% slower | [details](benchmark/results/replace.chart.html) |
 | remove(n) | **fastest** | 94.89% slower | [details](benchmark/results/remove.chart.html) |
+| reverse | **fastest** | 66.73% slower | [details](benchmark/results/reverse.chart.html) |
 
-
+_tested in MacOS 14 with Intel Core i9 and Node@18.0.0_
 
 
 ## Contributing
