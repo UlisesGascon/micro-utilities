@@ -1,0 +1,27 @@
+{
+  "name": "Access random Items",
+  "date": "2024-02-13T13:47:24.374Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 893498205,
+      "margin": 2.12,
+      "percentSlower": 0
+    },
+    {
+      "name": "Linked List",
+      "ops": 293258,
+      "margin": 2.85,
+      "percentSlower": 99.97
+    }
+  ],
+  "fastest": {
+    "name": "Array",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Linked List",
+    "index": 1
+  }
+}

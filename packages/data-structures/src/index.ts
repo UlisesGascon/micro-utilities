@@ -107,4 +107,35 @@ export class LinkedList {
     }
     return set
   }
+
+  public atFirst () :Node | undefined {
+    return this.at(0)
+  }
+
+  public atLast () :Node | undefined {
+    return this.at(this.length - 1)
+  }
+
+  public at (index: number) :Node | undefined {
+    if(index >= this.length || index < 0) {
+      return undefined
+    }
+
+    if(index === 0) {
+      return this.head?.value;
+    }
+
+    if(index === (this.length - 1)) {
+      return this.tail?.value
+    }
+
+    let counter = 0
+    let current: Node | null = this.head
+    while (counter < index) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      current = current!.next
+      counter++
+    }
+    return current?.value
+  }
 }

@@ -80,4 +80,29 @@ describe('data-structures: LinkedList', () => {
         .push("Item 3")
       expect(linkedList.toSet()).toEqual(new Set([value, "Item 2", "Item 3"]))
     })
+
+    it('Access items with .at()', () => {
+      const linkedList = new LinkedList(value)
+        .push("Item 2")
+        .push("Item 3")
+        .push("Item 4")
+      expect(linkedList.at(0)).toBe(value)
+      expect(linkedList.at(1)).toBe("Item 2")
+      expect(linkedList.at(2)).toBe("Item 3")
+      expect(linkedList.at(3)).toBe("Item 4")
+
+      // Edge cases
+      expect(linkedList.at(-1000)).toBe(undefined)
+      expect(linkedList.at(300)).toBe(undefined)
+    })
+    it('Access items with .atFirst()', () => {
+      const linkedList = new LinkedList(value)
+      expect(linkedList.atFirst()).toBe(value)
+    })
+    it('Access items with .atLast()', () => {
+      const linkedList = new LinkedList(value)
+      expect(linkedList.atLast()).toBe(value)
+      linkedList.push("Item 2")
+      expect(linkedList.atLast()).toBe("Item 2")
+    })
 })

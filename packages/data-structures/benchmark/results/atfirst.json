@@ -1,0 +1,27 @@
+{
+  "name": "Access First Item",
+  "date": "2024-02-13T13:47:35.428Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Array",
+      "ops": 100290320,
+      "margin": 4.02,
+      "percentSlower": 2.49
+    },
+    {
+      "name": "Linked List",
+      "ops": 102853043,
+      "margin": 3.48,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Linked List",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Array",
+    "index": 0
+  }
+}

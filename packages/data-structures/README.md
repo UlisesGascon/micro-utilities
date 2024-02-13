@@ -67,6 +67,10 @@ console.log(linkedList.tail.next) // null
 linkedList.push("Second Item")
 console.log(linkedList.head.next.value) // Second Item
 console.log(linkedList.tail.value) // Second Item
+console.log(linkedList.atFirst()) // Hello World
+console.log(linkedList.at(0)) // Hello World
+console.log(linkedList.atLast()) // Second Item
+console.log(linkedList.at(1)) // Second Item
 const arrList = linkedList.toArray()
 console.log(arrList) // ["Hello World", "Second Item"]
 const setList = linkedList.toSet()
@@ -103,6 +107,9 @@ console.log(linkedList.tail) // null
 | Purge | 97.79% slower | **faster** | [details](benchmark/results/purge.chart.html) |
 | Array Conversion | N/A | N/A | N/A |
 | Set Conversion | 4.42% slower | **fastest** | [details](benchmark/results/toset.chart.html) |
+| at(n) | **fastests** | 99.97% slower | [details](benchmark/results/at.chart.html) |
+| atFirst | **fastest** | 2.49% slower | [details](benchmark/results/atfirst.chart.html) |
+| atLast | **fastest** | 81.74% slower | [details](benchmark/results/atlast.chart.html) |
 
 
 
