@@ -116,7 +116,7 @@ export class LinkedList {
   }
 
   public atLast () :Node | undefined {
-    return this.at(this.length - 1)
+    return this.tail?.value
   }
 
   public find (cb: (value: any) => boolean): Node | undefined {

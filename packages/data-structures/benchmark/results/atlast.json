@@ -1,30 +1,30 @@
 {
   "name": "Access Last Item",
-  "date": "2024-02-15T14:22:09.477Z",
+  "date": "2024-02-15T16:09:41.151Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Array",
-      "ops": 670449604,
-      "margin": 0.46,
-      "percentSlower": 0
+      "ops": 291349836,
+      "margin": 5.63,
+      "percentSlower": 3.66
     },
     {
       "name": "Linked List (using .atLast())",
-      "ops": 140482183,
-      "margin": 0.49,
-      "percentSlower": 79.05
+      "ops": 302427149,
+      "margin": 5.06,
+      "percentSlower": 0
     },
     {
       "name": "Linked List (using .at(n))",
-      "ops": 140342264,
-      "margin": 0.74,
-      "percentSlower": 79.07
+      "ops": 64557411,
+      "margin": 2.56,
+      "percentSlower": 78.65
     }
   ],
   "fastest": {
-    "name": "Array",
-    "index": 0
+    "name": "Linked List (using .atLast())",
+    "index": 1
   },
   "slowest": {
     "name": "Linked List (using .at(n))",
