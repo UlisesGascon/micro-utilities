@@ -1,18 +1,18 @@
 {
   "name": "Convert Items to Set",
-  "date": "2024-02-12T18:48:35.811Z",
+  "date": "2024-02-15T14:14:50.268Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Array",
-      "ops": 32997,
-      "margin": 1.02,
-      "percentSlower": 4.42
+      "ops": 14404,
+      "margin": 3.17,
+      "percentSlower": 9.15
     },
     {
       "name": "Linked List",
-      "ops": 34523,
-      "margin": 0.86,
+      "ops": 15854,
+      "margin": 2.07,
       "percentSlower": 0
     }
   ],

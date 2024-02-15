@@ -1,19 +1,19 @@
 {
   "name": "Find an item index",
-  "date": "2024-02-13T17:07:24.746Z",
+  "date": "2024-02-15T14:32:13.753Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Array",
-      "ops": 1291073,
-      "margin": 62.84,
+      "ops": 2062637,
+      "margin": 48.66,
       "percentSlower": 0
     },
     {
       "name": "Linked List",
-      "ops": 199994,
-      "margin": 6.42,
-      "percentSlower": 84.51
+      "ops": 362117,
+      "margin": 0.73,
+      "percentSlower": 82.44
     }
   ],
   "fastest": {

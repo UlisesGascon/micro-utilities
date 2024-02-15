@@ -115,21 +115,21 @@ console.log(revertedList) // [60, 50, 40, 15, 10]
 |--------|-------|-------------|---------|
 | Initialization | **fastest** | 88.51% slower | [details](benchmark/results/initialization.chart.html) |
 | Push | **fastest** | 1.98% slower | [details](benchmark/results/push.chart.html) |
-| Pop | **fastest** | 48.38% slower | [details](benchmark/results/pop.chart.html) |
-| Shift | 40.88% slower | **fastest** | [details](benchmark/results/shift.chart.html) |
+| Pop | **fastest** | 78.87% slower | [details](benchmark/results/pop.chart.html) |
+| Shift | 77.17% slower | **fastest** | [details](benchmark/results/shift.chart.html) |
 | Unshift | 93.52% slower | **fastest** | [details](benchmark/results/unshift.chart.html) |
-| Purge | 97.79% slower | **faster** | [details](benchmark/results/purge.chart.html) |
+| Purge | 97.99% slower | **faster** | [details](benchmark/results/purge.chart.html) |
 | Array Conversion | N/A | N/A | N/A |
-| Set Conversion | 4.42% slower | **fastest** | [details](benchmark/results/toset.chart.html) |
-| at(n) | **fastests** | 99.97% slower | [details](benchmark/results/at.chart.html) |
-| atFirst | **fastest** | 2.49% slower | [details](benchmark/results/atfirst.chart.html) |
-| atLast | **fastest** | 81.74% slower | [details](benchmark/results/atlast.chart.html) |
-| find | **fastest** | 81.29% slower | [details](benchmark/results/find.chart.html) |
-| findIndex | **fastest** | 84.51% slower | [details](benchmark/results/findindex.chart.html) |
-| insert(n) | **fastest** | 99.16% slower | [details](benchmark/results/insert.chart.html) |
-| replace(n) | **fastest** | 99.85% slower | [details](benchmark/results/replace.chart.html) |
-| remove(n) | **fastest** | 94.89% slower | [details](benchmark/results/remove.chart.html) |
-| reverse | **fastest** | 66.73% slower | [details](benchmark/results/reverse.chart.html) |
+| Set Conversion | 9.15% slower | **fastest** | [details](benchmark/results/toset.chart.html) |
+| at(n) | **fastests** | 99.94% slower | [details](benchmark/results/at.chart.html) |
+| atFirst | **fastest** | 2.25% slower | [details](benchmark/results/atfirst.chart.html) |
+| atLast | **fastest** | 79.07% slower | [details](benchmark/results/atlast.chart.html) |
+| find | **fastest** | 87.3% slower | [details](benchmark/results/find.chart.html) |
+| findIndex | **fastest** | 82.44% slower | [details](benchmark/results/findindex.chart.html) |
+| insert(n) | **fastest** | 92.63% slower | [details](benchmark/results/insert.chart.html) |
+| replace(n) | **fastest** | 99.8% slower | [details](benchmark/results/replace.chart.html) |
+| remove(n) | **fastest** | 95.74% slower | [details](benchmark/results/remove.chart.html) |
+| reverse | **fastest** | 59.89% slower | [details](benchmark/results/reverse.chart.html) |
 
 _tested in MacOS 14 with Intel Core i9 and Node@18.0.0_
 

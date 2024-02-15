@@ -1,19 +1,19 @@
 {
   "name": "Replace Items",
-  "date": "2024-02-13T18:28:06.026Z",
+  "date": "2024-02-15T14:40:12.663Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Array (Splice)",
-      "ops": 532477496,
-      "margin": 29.58,
+      "ops": 744682126,
+      "margin": 5.58,
       "percentSlower": 0
     },
     {
       "name": "Linked List",
-      "ops": 780882,
-      "margin": 1.97,
-      "percentSlower": 99.85
+      "ops": 1520652,
+      "margin": 1.32,
+      "percentSlower": 99.8
     }
   ],
   "fastest": {

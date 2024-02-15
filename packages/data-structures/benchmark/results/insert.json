@@ -1,33 +1,33 @@
 {
   "name": "Insert Items",
-  "date": "2024-02-13T17:46:27.224Z",
+  "date": "2024-02-15T14:41:34.537Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Array (Splice)",
-      "ops": 16083984,
-      "margin": 1.87,
-      "percentSlower": 72.32
-    },
-    {
-      "name": "Array (Reduce)",
-      "ops": 58098301,
-      "margin": 2.8,
+      "ops": 14480887,
+      "margin": 2.06,
       "percentSlower": 0
     },
     {
+      "name": "Array (Reduce)",
+      "ops": 4483,
+      "margin": 27.34,
+      "percentSlower": 99.97
+    },
+    {
       "name": "Linked List",
-      "ops": 490176,
-      "margin": 5.11,
-      "percentSlower": 99.16
+      "ops": 1067564,
+      "margin": 6.63,
+      "percentSlower": 92.63
     }
   ],
   "fastest": {
-    "name": "Array (Reduce)",
-    "index": 1
+    "name": "Array (Splice)",
+    "index": 0
   },
   "slowest": {
-    "name": "Linked List",
-    "index": 2
+    "name": "Array (Reduce)",
+    "index": 1
   }
 }
