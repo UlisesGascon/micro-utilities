@@ -112,7 +112,7 @@ export class LinkedList {
   }
 
   public atFirst () :Node | undefined {
-    return this.at(0)
+    return this.head?.value
   }
 
   public atLast () :Node | undefined {

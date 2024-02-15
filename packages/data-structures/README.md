@@ -122,7 +122,7 @@ console.log(revertedList) // [60, 50, 40, 15, 10]
 | Array Conversion | N/A | N/A | N/A |
 | Set Conversion | 9.15% slower | **fastest** | [details](benchmark/results/toset.chart.html) |
 | at(n) | **fastests** | 99.94% slower | [details](benchmark/results/at.chart.html) |
-| atFirst | **fastest** | 2.25% slower | [details](benchmark/results/atfirst.chart.html) |
+| atFirst | **fastest** | 5.01% slower | [details](benchmark/results/atfirst.chart.html) |
 | atLast | **fastest** | 79.07% slower | [details](benchmark/results/atlast.chart.html) |
 | find | **fastest** | 87.3% slower | [details](benchmark/results/find.chart.html) |
 | findIndex | **fastest** | 82.44% slower | [details](benchmark/results/findindex.chart.html) |
